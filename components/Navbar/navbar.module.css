@@ -1,0 +1,14 @@
+.navContainer {
+  background: #222;
+  padding: 5px 20px;
+}
+.navList {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+.navList > li :hover {
+  text-decoration: underline;
+}
