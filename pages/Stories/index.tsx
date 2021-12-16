@@ -1,5 +1,7 @@
 import React, { useMemo } from "react";
 import { useParams } from "react-router-dom";
+import { StoriesContainer } from "../../containers/StoriesContainer";
+import styles from "./stories.module.css";
 
 const StoriesPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -12,7 +14,12 @@ const StoriesPage: React.FC = () => {
     return "News Stories";
   }, [slug]);
 
-  return <div>{title}</div>;
+  return (
+    <>
+      <h2 className={styles.title}>{title}</h2>
+      <StoriesContainer ids={[]} />
+    </>
+  );
 };
 
 export default StoriesPage;
