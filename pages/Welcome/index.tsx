@@ -2,6 +2,7 @@ import React from 'react';
 import styles from "./welcome.module.css";
 
 const WelcomePage: React.FC = () => {
+  
   return (
     <div className={styles.welcomeContainer}>
       <h1>

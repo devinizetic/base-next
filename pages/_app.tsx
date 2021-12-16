@@ -1,12 +1,18 @@
-import '../styles/globals.css'
-import { AppProps } from 'next/app'
+import "../styles/globals.css";
+import { AppProps } from "next/app";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { Navbar } from "../components/Navbar";
 
+const queryClient = new QueryClient();
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div suppressHydrationWarning>
-      {typeof window === 'undefined' ? null : <Component {...pageProps} />}
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <>
+        <Navbar />
+        <Component {...pageProps} />
+      </>
+    </QueryClientProvider>
   );
 }
 
-export default MyApp
+export default MyApp;
