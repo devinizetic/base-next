@@ -1,6 +1,6 @@
 import { IItem } from '../../shared/model';
 import { StoryItem } from '../StoryItem';
-import styles from "./storyList.module.css";
+import styles from './storyList.module.css';
 
 interface IProps {
   items: IItem[];

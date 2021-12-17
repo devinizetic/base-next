@@ -5,27 +5,27 @@ export interface ILink {
 
 export const Links: ILink[] = [
   {
-    path: "/welcome",
-    title: "Welcome"
+    path: '/welcome',
+    title: 'Welcome',
   },
   {
-    path: "/stories/new",
-    title: "New"
+    path: '/stories/new',
+    title: 'New',
   },
   {
-    path: "/stories/top",
-    title: "Top"
+    path: '/stories/top',
+    title: 'Top',
   },
   {
-    path: "/stories/best",
-    title: "Best"
+    path: '/stories/best',
+    title: 'Best',
   },
   {
-    path: "/stories/ask",
-    title: "Ask"
+    path: '/stories/ask',
+    title: 'Ask',
   },
   {
-    path: "/stories/show",
-    title: "Show"
-  }
+    path: '/stories/show',
+    title: 'Show',
+  },
 ];

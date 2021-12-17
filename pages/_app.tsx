@@ -1,7 +1,7 @@
-import "../styles/globals.css";
-import { AppProps } from "next/app";
-import { QueryClient, QueryClientProvider } from "react-query";
-import { Navbar } from "../components/Navbar";
+import '../styles/globals.css';
+import { AppProps } from 'next/app';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { Navbar } from '../components/Navbar';
 
 const queryClient = new QueryClient();
 function MyApp({ Component, pageProps }: AppProps) {

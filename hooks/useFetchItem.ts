@@ -10,6 +10,6 @@ export const useFetchItem: UseFetchItem = () => {
   const fetch = useFetch();
   return useCallback(
     (id: number) => fetch(`item/${id}`).then((response: IItem) => response),
-    [fetch],
+    [fetch]
   );
 };

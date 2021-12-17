@@ -1,8 +1,10 @@
-import { useCallback } from "react";
+import { useCallback } from 'react';
 
-import { useFetch } from "./useFetch";
+import { useFetch } from './useFetch';
 
-type UseFetchItemsReturn = (key: string | string[] | undefined) => Promise<number[]>;
+type UseFetchItemsReturn = (
+  key: string | string[] | undefined
+) => Promise<number[]>;
 type UseFetchItems = () => UseFetchItemsReturn;
 
 export const useFetchItemIds: UseFetchItems = () => {

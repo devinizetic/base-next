@@ -11,5 +11,8 @@ export const useFetchItems: UseFetchItems = () => {
   const fetch = useFetch();
   const fetchItem = useFetchItem();
 
-  return useCallback((ids: number[]): Promise<IItem[]> => Promise.all(ids.map(fetchItem)), [fetch]);
+  return useCallback(
+    (ids: number[]): Promise<IItem[]> => Promise.all(ids.map(fetchItem)),
+    [fetch]
+  );
 };
