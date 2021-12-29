@@ -1,9 +1,10 @@
 import { useRouter } from 'next/router';
 import React, { useMemo } from 'react';
 import { StoriesContainer } from '../../containers/StoriesContainer';
+import getAdminLayout from '../../layouts/admin';
 import styles from './stories.module.css';
 
-const StoriesPage: React.FC = () => {
+export default function StoriesPage() {
   const router = useRouter();
   const { slug } = router.query;
   const title = useMemo(() => {
@@ -22,4 +23,4 @@ const StoriesPage: React.FC = () => {
   );
 };
 
-export default StoriesPage;
+StoriesPage.getLayout = getAdminLayout;
